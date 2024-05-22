@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cowin Portal</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      .bg-head,
+      .btn-bg {
+        background-color: #015858;
+      }
+      .bg-nav,
+      .btn-nav,
+      .btn-main,
+      .bg-main {
+        background-color: #017e7e;
+      }
+      .btn-tab{
+        background-color: #8ee1e1;
+      }
+      .bg-content {
+        background-color: #c7f2f2;
+      }
+      .text-content {
+        color: #015858;
+      }
+      .text-button{
+        color: #023737;
+      }
+      .btn-carousel {
+        background-color: #29dcdc;
+      }
+      .btn-radius,
+      .border-radius {
+        border-radius: 50px;
+      }
+      .mainIndia-border {
+        padding-top: 5px;
+        width: 200px;
+        height: 50px;
+        text-align: center;
+        font-weight: 500;
+        font-size: larger;
+        background-color: #017e7e;
+        color: white;
+      }
+      .img-partner {
+        width: 200px;
+        height: 50px;
+        padding: 10px;
+      }
+      .bg-white {
+        background-color: white;
+      }
+      .tab button:hover {
+        background-color: #ddd;
+      }
+      .tab button.active {
+        background-color: #ccc;
+      }
+      .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+      }
+      .faqtabcontent{
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="bg-head">
+        <div class="row justify-content-around align-items-center">
+          <div class="col-auto d-flex align-items-center">
+            <div>
+              <img
+                src="images/emblem.png"
+                style="height: 50px"
+                alt="Ministry of Health and Family Welfare Emblem"
+              />
+            </div>
+            <div style="width: 200px">
+              <span class="text-white"
+                >Ministry of Health and Family Welfare</span
+              >
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="d-flex align-items-center">
+              <span class="btn me-3 border text-white">A+</span>
+              <span class="btn me-3 border text-white">A</span>
+              <span class="btn me-3 border text-white">A-</span>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                English
+              </button>
+              <div
+                class="dropdown-menu dropdown-menu-scrollable"
+                aria-labelledby="dropdownMenuButton"
+              >
+                <a class="dropdown-item" href="#">English</a>
+                <a class="dropdown-item" href="#">हिंदी(Hindi)</a>
+                <a class="dropdown-item" href="#">മലയാളം(Malayalam)</a>
+                <a class="dropdown-item" href="#">मराठी(Marathi)</a>
+                <a class="dropdown-item" href="#">ਪੰਜਾਬੀ(Punjabi)</a>
+                <a class="dropdown-item" href="#">తెలుగు(Telugu)</a>
+                <a class="dropdown-item" href="#">ગુજરાતી(Gujarati)</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-nav">
+      <div class="images">
+        <img src="images/plus.svg" />
+      </div>
+
+      <div
+        class="collapse navbar-collapse justify-content-around text-white"
+        id="navbarSupportedContent"
+      >
+        <span>ABHA(Health ID)</span>
+        <span>DASHBOARD</span>
+        <span>VERIFY CERTIFICATE</span>
+        <span>FAQ</span>
+        <span>PARTNERS</span>
+        <button class="btn btn-nav text-white border border-white">
+          REGISTER / SIGN IN
+        </button>
+      </div>
+    </nav>
+    <main>
+      <div>
+        <div class="row">
+          <div
+            class="col-md-6 bg-img"
+            style="
+              padding: 20px;
+              background-image: url('images/bgimage.jpg'); background-repeat: no-repeat; background-size: 700px;
+              width: 500px;
+            "
+          >
+            <h1>Historic & Unparalleled Achievement!</h1>
+            <h2>India’s Glorious Journey of</h2>
+            <div class="border border-danger rounded d-flex align-items-center">
+              <img src="images/verified.svg" width="35px" />
+              <h1 class="text-danger">200 CRORE VACCINATIONS</h1>
+            </div>
+
+            <h6>
+              "India is set to defeat Covid-19. Every Indian is making it
+              possible."
+            </h6>
+            <p>- PM Narendra Modi</p>
+          </div>
+          <div class="col-md-6 d-flex align-items-center">
+            <img
+              src="images/independance.svg"
+              style="width: 500px"
+              alt="Image Description"
+            />
+            <div class="dropdown position-fixed top-50 end-0 ">
+              <button
+                class="btn btn-main dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img
+                  src="images/phoneSupport.svg"
+                  alt="Image Description"
+                  class="btn-icon"
+                />
+                Support for Covid-19
+              </button>
+              <div
+                class="dropdown-menu dropdown-menu-scrollable"
+                aria-labelledby="dropdownMenuButton"
+              >
+                <a class="dropdown-item" href="#">Health MInistry</a>
+                <span class="dropdown-subtext">(123-456-7890)</span>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Child</a>
+                <span class="dropdown-subtext">(1098)</span>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Mental Health</a>
+                <span class="dropdown-subtext">(234-456-678)</span>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Senior Citizens</a>
+                <span class="dropdown-subtext">(14567)</span>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">NCW</a>
+                <span class="dropdown-subtext">(987-654-321)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row bg-main align-items-center">
+          <div class="col-md-2">
+            <div
+              class="d-flex justify-content-center align-items-center flex-column"
+            >
+              <img
+                src="images/range.png"
+                style="width: 80px"
+                alt="Range Image"
+              />
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div
+              class="d-flex justify-content-center text-white align-items-center flex-column"
+            >
+              <h6>TOTAL VACCINATION DOSES</h6>
+              <h6>2,20,68,29,068</h6>
+            </div>
+          </div>
+          <div class="col-md-2" style="padding: 20px">
+            <button class="btn btn-warning text-dark border border-white">
+              VIEW MORE
+            </button>
+          </div>
+          <div class="col-md-3">
+            <div
+              class="d-flex justify-content-center align-items-center flex-column"
+            >
+              <h6>VACCINATIONS DONE TODAY</h6>
+              <h6>852</h6>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div
+              class="d-flex justify-content-center align-items-center flex-column"
+            >
+              <img
+                src="images/range.png"
+                style="width: 80px"
+                alt="Range Image"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="bg-content">
+          <h1 class="text-center mb-5 text-content" style="padding: 20px">
+              Get Vaccinated in 3 Easy Steps
+          </h1>
+          <div class="row justify-content-center">
+            <div class="col-md-3 text-center" style="padding: 10px; margin: 10px;">
+              <div class="bg-white border border-white border-radius" style="width: 250px; height: 450px;">
+                  <h6>Step 1</h6>
+                  <img src="images/Step_1.svg" class="img-fluid mt-3" style="height: 150px;" />
+                  <div class="bg-main p-3 mt-3" style="max-width: 250px;">
+                      <p class="mb-0">Book an Appointment on Co-WIN or Walk into any Vaccination Center</p>
+                  </div>
+                  <div class="bg-white p-3 mt-2" style="width: fit-content;">
+                      <h6 class="mb-0">How to Book Your Appointment on Co-WIN?</h6>
+                  </div>
+              </div>
+          </div>
+              
+          <div class="col-md-3 text-center" style="padding: 10px; margin: 10px;">
+            <div class="bg-white border border-white border-radius" style="width: 250px; height: 450px;">
+                <h6>Step 2</h6>
+                <img src="images/Step_2.svg" class="img-fluid mt-3" style="height: 150px;"/>
+                <div class="bg-main p-3 mt-3" style="max-width: 250px; height: 100px;">
+                    <p class="mb-0">Get Your Vaccination Safely at the Time of Your Appointment</p>
+                </div>
+                <div class="bg-white p-3 mt-2" style="width: fit-content;">
+                    <h6 class="mb-0">Dos And Dont's For Getting
+                      Vaccinated
+                      
+                      </h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 text-center" style="padding: 10px; margin: 10px;">
+          <div class="bg-white border border-white border-radius" style="width: 250px; height: 450px;">
+              <h6>Step 3</h6>
+              <img src="images/Step_3.svg" class="img-fluid mt-3" style="height: 150px;" />
+              <div class="bg-main p-3 mt-3" style="max-width: 250px; height: 100px;">
+                  <p class="mb-0">Download Your Vaccination Certificate from Co-WIN and Wait for Dose #2
+
+                   
+                    </p>
+              </div>
+              <div class="bg-white p-3 mt-2" style="width: fit-content;">
+                  <h6 class="mb-0"> Download Your Vaccine
+                    Certificate
+                    </h6>
+              </div>
+          </div>
+      </div>
+          </div>
+      </div>
+        <div class="slotList">
+          <div class="text-center">
+            <h2 class="mb-2 text-content">
+              Search Your Nearest Vaccination Center
+            </h2>
+            <h6 class="mb-3">
+              Get a preview list of the nearest centers and check availability
+              of vaccination slots
+            </h6>
+            <h6>
+              <a class="mb-2 text-content link-underline-light" href="#"
+                >Login To Book Your Slot</a
+              >
+            </h6>
+            <div class="tab">
+              <button class="tablinks border-0 btn btn-lg btn-tab" style="width: 300px;" onclick="openOption(event, 'district')">By District</button>
+              <button class="tablinks border-0 btn btn-lg btn-tab" style="width: 300px;" onclick="openOption(event, 'pin')">By PIN</button>
+              <button class="tablinks border-0 btn btn-lg btn-tab" style="width: 300px;" onclick="openOption(event, 'map')">On the Map</button>
+            </div>
+            <div id="district" class="tabcontent" style="display: block;">
+              <div class="row justify-content-center ">
+                <div class="col-3">
+                  
+              <select class="form-select mb-3">
+                <option value="" disabled selected>Select a State</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+                </div>
+                <div class="col-3">
+              <select class="form-select mb-3">
+                <option value="" disabled selected>Select a District</option>
+  <option value="1">Option 1</option>
+  <option value="2">Option 2</option>
+  <option value="3">Option 3</option>
+              </select>
+                </div>
+                <div class="col-3">
+                  
+                  <button class="btn btn-tab">Search</button>
+                </div>
+               
+              </div>
+              
+              
+            </div>
+
+            <div id="pin" class="tabcontent">
+              <h4>Enter your Pin</h4>
+              <div class="row justify-content-center">
+                <div class="col-3">
+                  <input type="text" class="form-control" placeholder="Enter Pin">
+                </div>
+                <div class="col-auto">
+                  <button class="btn btn-tab">Search</button>
+                </div>
+              </div>
+            </div>
+              </div>
+            </div>
+            <div id="map" class="tabcontent">
+              <p>Yet to be implemented</p>
+            </div>
+            </div>
+
+          </div>
+        
+        <div class="bookSlot">
+          <div class="row">
+            <div class="col-md-6 bg-img" style="padding: 50px; margin: auto">
+              <h1 class="text-content">Free COVID Precaution Dose</h1>
+              <p class="text-secondary">
+                Now Precaution dose for 18-59 age group free at Government
+                Vaccination Center.
+              </p>
+              <button
+                class="btn btn-main btn-radius text-white border border-white"
+                style="width: 200px"
+              >
+                Book Your Slot
+              </button>
+            </div>
+            <div
+              class="col-md-6 d-flex align-items-center"
+              style="padding: 50px"
+            >
+              <img
+                src="images/free_covid_precaution_dose.svg"
+                alt="Book Your Slot"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="sideEffect">
+          <div class="row bg-content">
+            <div
+              class="col-md-6 d-flex align-items-center"
+              style="padding: 50px"
+            >
+              <img src="images/reports-aefi.svg" alt="Book Your Slot" />
+            </div>
+            <div class="col-md-6 bg-img" style="padding: 50px; margin: auto">
+              <h1 class="text-content">Report Side Effect</h1>
+              <p class="text-secondary">
+                If you have experienced any side effect after COVID-19
+                vaccination, it can be reported on Co-WIN using your registered
+                mobile number.
+              </p>
+              <button
+                class="btn btn-main btn-radius text-white border border-white"
+                style="width: 200px"
+              >
+                Report Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="childVaccination">
+          <div class="row">
+            <div class="col-md-6 bg-img" style="padding: 50px; margin: auto">
+              <h1 class="text-content">Children Vaccination</h1>
+              <ul>
+                <li>
+                  Covovax vaccine is now available for Children of the age group
+                  12+ yrs in Private Vaccination Center. The time span between
+                  first and second dose of Covovax is 21 days. Children can be
+                  administered with the second dose of Covovax within a month.
+                </li>
+                <li>
+                  Children of the age group 12-14 yrs are now eligible for the
+                  Corbevax vaccine in Government Vaccination Center and in
+                  Private Vaccination Center 12+ yrs. The period between a first
+                  and second dose of Corbevax is 28 days.
+                </li>
+                <li>
+                  Covaxin is available for Children of the age group of 15+ yrs
+                  in both Government and Private Vaccination Center. Children
+                  must be completed 4 to 6 weeks after administration of the
+                  first dose of Covaxin to take the second dose of Covaxin. Both
+                  online and walk-in are available.
+                </li>
+              </ul>
+              <button
+                class="btn btn-main btn-radius text-white border border-white"
+                style="width: 200px"
+              >
+                Book Your Slot
+              </button>
+            </div>
+            <div
+              class="col-md-6 d-flex align-items-center"
+              style="padding: 50px"
+            >
+              <img src="images/Children_Vaccination.svg" alt="Book Your Slot" />
+            </div>
+          </div>
+        </div>
+        <div class="vaccinationDate">
+          <div class="row bg-content">
+            <div
+              class="col-md-6 d-flex align-items-center"
+              style="padding: 50px"
+            >
+              <img src="images/Date_Correction.svg" alt="Book Your Slot" />
+            </div>
+            <div class="col-md-6 bg-img" style="padding: 50px; margin: auto">
+              <h1 class="text-content">Vaccinaton Date Correction</h1>
+              <p class="text-secondary">
+                If the date printed on your vaccination certificate differs from
+                the actual date of vaccine administration, you may raise a
+                request for correction of the same by submitting a valid proof
+                of correct vaccination date.
+              </p>
+              <button
+                class="btn btn-main btn-radius text-white border border-white"
+                style="width: 200px"
+              >
+                Update Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="precautionDose">
+          <div class="row">
+            <div class="col-md-6 bg-img" style="padding: 50px; margin: auto">
+              <h1 class="text-content">Precaution Dose</h1>
+              <ul>
+                <li>
+                  All fully vaccinated adult citizens (18+ and have taken 2
+                  doses) are eligible for precaution dose from 10/04/2022.
+                  Eligible citizens can avail precaution dose at any Government
+                  or Private Vaccination Center. Citizens should carry their
+                  Final Certificate of vaccination (with details of both earlier
+                  doses). Citizens should use the same mobile number and ID card
+                  used for earlier doses.
+                </li>
+                <li>
+                  HCWs, FLWs and Citizens aged 60 year or more, shall continue
+                  to receive precaution dose vaccination at any CVC, including
+                  free of charge vaccination at Government Vaccination Center.
+                </li>
+                <li>
+                  For international travel, precaution dose can be administered
+                  to such beneficiary less than 9 months to at a minimum
+                  interval of 3 months (90 days) from the date of administration
+                  of the second dose as recorded on Co-WlN as per requirement of
+                  the destination country. All Vaccination Center in the State
+                  where precaution dose is being administered are eligible to
+                  administer precaution dose.
+                </li>
+              </ul>
+              <button
+                class="btn btn-main btn-radius text-white border border-white"
+                style="width: 200px"
+              >
+                Book Your Slot
+              </button>
+            </div>
+            <div
+              class="col-md-6 d-flex align-items-center"
+              style="padding: 50px"
+            >
+              <img src="images/Precaution_dose.svg" alt="Book Your Slot" />
+            </div>
+          </div>
+        </div>
+        <div class="vaccinationStatus">
+          <div class="row bg-content">
+            <div
+              class="col-md-6 d-flex align-items-center"
+              style="padding: 50px"
+            >
+              <img
+                src="images/share_illustration.svg"
+                style="height: 300px"
+                alt="Book Your Slot"
+              />
+            </div>
+            <div class="col-md-6 bg-img" style="padding: 50px; margin: auto">
+              <h1 class="text-content">Share Your Vaccination Status</h1>
+              <p class="text-secondary">
+                Be a Fighter! If you are fully or partially vaccinated, you can
+                now share your vaccination status in your social circle. Let's
+                encourage our friends and followers in joining India's battle
+                against COVID-19.
+              </p>
+              <button
+                class="btn btn-main btn-radius text-white border border-white"
+                style="width: 200px"
+              >
+                Share Your Status
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="ABHA">
+          <div class="text-center" style="padding: 20px">
+            <h2 class="text-content">ABHA (Health ID) and its Benefits</h2>
+            <p>
+              ABHA (earlier known as Health ID) is an acronym for Ayushman
+              Bharat Health Account. Using ABHA (Health ID) is the first step
+              towards creating safer and efficient digital health records for
+              you and your family. It enables your interaction with
+              participating healthcare providers, and allows you to receive your
+              digital lab reports, prescriptions and diagnosis seamlessly from
+              verified healthcare professionals and health service providers.
+            </p>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                class="embed-responsive-item border border-dark"
+                src="https://www.youtube.com/embed/5ZvLR1DcNBo"
+                allowfullscreen
+                style="
+                  background-image: url(images/abha-previewimg.jpg);
+                  background-size: cover;
+                "
+              ></iframe>
+              <iframe
+                class="embed-responsive-item border border-dark"
+                src="https://www.youtube.com/embed/GV3cR7AwTL0"
+                allowfullscreen
+                style="
+                  background-image: url(images/abha-preview.jpg);
+                  background-size: cover;
+                "
+              ></iframe>
+            </div>
+            <button
+              class="btn btn-main btn-radius text-white border border-white"
+              style="width: 300px; height: 50px"
+            >
+              Click Here To Know More
+            </button>
+          </div>
+        </div>
+        <div class="raiseIssue bg-main">
+          <div class="row text-center text-white" style="padding: 20px">
+            <div class="col">
+              <h2 class="text-white">Raise An Issue</h2>
+              <p>
+                Raise an issue or get solutions to your Co-WIN account and
+                vaccination certificate related issues instantly.
+              </p>
+            </div>
+          </div>
+          <div class="row justify-content-around text-center p-3">
+            <div class="col-sm-3 border rounded bg-white" style="width: 250px; height: 220px; padding: 10px;">
+              <h6 class="text-content">Merge Certificates</h6>
+              <p>
+                In case you have multiple certificates of Dose 1 generated from
+                different accounts, you can merge them into the final
+                vaccination certificate.
+              </p>
+            </div>
+            <div class="col-sm-3 border rounded bg-white" style="width: 250px; height: 220px; padding: 10px;">
+              <h6 class="text-content">Add Passport</h6>
+              <p>
+                You can link your passport to your vaccination certificate. By
+                adding a passport to your vaccination certificate you can submit
+                a request and get an international travel certificate.
+              </p>
+            </div>
+            <div class="col-sm-3 border rounded bg-white" style="width: 250px; height: 220px; padding: 10px;">
+              <h6 class="text-content">Report Unknown Member</h6>
+              <p>
+                If there are any unknown members associated with your account,
+                you can remove them from your account by reporting unknown
+                members.
+              </p>
+            </div>
+            <div class="col-sm-3 border rounded bg-white" style="width: 250px; height: 220px; padding: 10px;">
+              <h6 class="text-content">Transfer Member To New Number</h6>
+              <p>
+                You can transfer members associated with your existing account
+                to the new mobile number.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="freqAsked" style="padding: 30px">
+          <h2 class="text-center text-content">Frequently Asked Questions</h2>
+
+          <div class="row p-3">
+            <div class="col-md-3">
+              <div class="text-center mb-3">
+                <a
+                  href="#"
+                  class="btn btn-light btn-outline-success text-content"
+                  style="width: 200px"
+                  >Download</a
+                >
+              </div>
+
+              <img
+                src="images/faq_Section.svg"
+                alt="FAQ Section Image"
+                class="img-fluid p-1"
+              />
+            </div>
+            <div class="col-md-9 ">
+              <div class="tab bg-content d-flex align-items-center justify-content-between p-2">
+                <button class="btn btn-outline-dark border-0 bg-content" style="width: auto;"><</button>
+                <button class="tablinks border-0 bg-content text-button fs-5" style="width: auto;" onclick="openOption2(event, 'all')">All</button>
+                <button class="tablinks border-0 bg-content text-button fs-5" style="width: auto;" onclick="openOption2(event, 'reg')">Registration</button>
+                <button class="tablinks border-0 bg-content text-button fs-5" style="width: auto;" onclick="openOption2(event, 'vac')">Vaccination Schedule</button>
+                <button class="tablinks border-0 bg-content text-button fs-5" style="width: auto;" onclick="openOption2(event, 'sche')">Scheduling Appointment</button>
+                <button class="btn btn-outline-dark border-0 bg-content" style="width: auto;">></button>
+            </div>
+              <div class="p-5">
+                <div id="all" class="faqtabcontent" style="display: block;">
+                  <div class="accordion-body">
+                    <div class="accordion-item">
+                      <h3 class="accordion-header" id="headingOneofOne">
+                        <button
+                          class="accordion-button collapsed text-decoration-underline"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseOneofOne"
+                          aria-expanded="false"
+                          aria-controls="collapseOneofOne"
+                        >
+                          Where can I register for COVID-19 vaccination?
+                        </button>
+                      </h3>
+                      <div
+                        id="collapseOneofOne"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingOneofOne"
+                        data-bs-parent="#accordion"
+                      >
+                        <div class="accordion-body">
+                          You can open the Co-WIN portal using the link
+                          www.cowin.gov.in and click on the “Register/Sign In”
+                          tab to register for COVID-19 vaccination, and follow
+                          the steps thereafter.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h3 class="accordion-header" id="headingTwoofOne">
+                        <button
+                          class="accordion-button collapsed text-decoration-underline"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwoofOne"
+                          aria-expanded="false"
+                          aria-controls="collapseTwoofOne"
+                        >
+                          Is there a mobile app that needs to be installed to
+                          register for vaccination?
+                        </button>
+                      </h3>
+                      <div
+                        id="collapseTwoofOne"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwoofOne"
+                        data-bs-parent="#accordion"
+                      >
+                        <div class="accordion-body">
+                          There is no authorised mobile app for registering
+                          for vaccination in India except Aarogya Setu and
+                          Umang Apps. You need to log into the Co-WIN portal
+                          at www.cowin.gov.in. Alternatively, you can also
+                          register for vaccination through the Aarogya Setu
+                          App or Umang apps.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="reg" class="faqtabcontent" style="display: block;">
+                  <div class="accordion-body">
+                    <div class="accordion-item">
+                      <h3 class="accordion-header" id="headingOneofTwo">
+                        <button
+                          class="accordion-button collapsed text-decoration-underline"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseOneofTwo"
+                          aria-expanded="false"
+                          aria-controls="collapseOneofTwo"
+                        >
+                          Which age groups can register for vaccination on the
+                          Co-WIN portal?
+                        </button>
+                      </h3>
+                      <div
+                        id="collapseOneofTwo"
+                        class="accordion-collapse collapse "
+                        aria-labelledby="headingOneofTwo"
+                        data-bs-parent="#accordion"
+                      >
+                        <div class="accordion-body">
+                          All beneficiaries who have completed 12 years of age
+                          and above on the day of registration (birth year
+                          2011 or earlier) can register for vaccination.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h3 class="accordion-header" id="headingTwoofTwo">
+                        <button
+                          class="accordion-button collapsed text-decoration-underline"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwoofTwo"
+                          aria-expanded="false"
+                          aria-controls="collapseTwoofTwo"
+                        >
+                          Is online registration mandatory for COVID-19
+                          vaccination?
+                        </button>
+                      </h3>
+                      <div
+                        id="collapseTwoofTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwoofTwo"
+                        data-bs-parent="#accordion"
+                      >
+                        <div class="accordion-body">
+                          No, vaccination centers provide for a limited number
+                          of on-spot registration slots every day.
+                          Beneficiaries can register online or walk-in to
+                          vaccination centers where the vaccination team staff
+                          can register a beneficiary. In general, all
+                          beneficiaries are recommended to register online and
+                          schedule vaccination in advance for a hassle-free
+                          vaccination experience.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+                <div id="vac" class="faqtabcontent" style="display: block;">
+                  <div class="accordion-body">
+                    <div class="accordion-item">
+                      <h3 class="accordion-header" id="headingOneofThree">
+                        <button
+                          class="accordion-button collapsed text-decoration-underline"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseOneofThree"
+                          aria-expanded="false"
+                          aria-controls="collapseOneofThree"
+                        >
+                          What are vaccination schedules?
+                        </button>
+                      </h3>
+                      <div
+                        id="collapseOneofThree"
+                        class="accordion-collapse collapse text-decoration-underline"
+                        aria-labelledby="headingOneofThree"
+                        data-bs-parent="#accordion"
+                      >
+                        <div class="accordion-body">
+                          Vaccination sessions timetables for various
+                          vaccination centers offering service, are published
+                          by the district administrators and vaccination site
+                          managers, from time to time. Co-WIN offers
+                          vaccination services “Anytime” and “Anywhere”
+                          subject to eligibility of the beneficiary. All
+                          published vaccination sessions are visible to
+                          beneficiaries on the Co-WIN system, for availing
+                          online appointment for vaccination services, as per
+                          their choice and convenience.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h3 class="accordion-header" id="headingTwoofThree">
+                        <button
+                          class="accordion-button collapsed text-decoration-underline"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwoofThree"
+                          aria-expanded="false"
+                          aria-controls="collapseTwoofThree"
+                        >
+                          How can I find the nearest vaccination center?
+                        </button>
+                      </h3>
+                      <div
+                        id="collapseTwoofThree"
+                        class="accordion-collapse collapse text-decoration-underline"
+                        aria-labelledby="headingTwoofThree"
+                        data-bs-parent="#accordion"
+                      >
+                        <div class="accordion-body">
+                          You can search in Co-WIN portal (or Aarogya Setu or
+                          Umang) for the vaccination center nearest to your
+                          location by either searching through Map, PIN code
+                          or by choosing the State and the District, on the
+                          home page of Co-WIN portal.
+                        </div>
+                      </div>
+                    </div>
+  
+                </div>
+                </div>
+                <div id="sche" class="faqtabcontent" style="display: block;">
+                 
+                      <div class="accordion-body">
+                        <div class="accordion-item">
+                          <h3 class="accordion-header" id="headingOneofFour">
+                            <button
+                              class="accordion-button collapsed text-decoration-underline"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseOneofFour"
+                              aria-expanded="false"
+                              aria-controls="collapseOneofFour"
+                            >
+                              Can I get vaccination without appointment?
+                            </button>
+                          </h3>
+                          <div
+                            id="collapseOneofFour"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingOneofFour"
+                            data-bs-parent="#accordion"
+                          >
+                            <div class="accordion-body">
+                              Appointments for vaccination can be taken either in
+                              online or onsite mode. Vaccination is recorded only
+                              after appointment.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h3 class="accordion-header" id="headingTwoofFour">
+                            <button
+                              class="accordion-button collapsed text-decoration-underline"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseTwoofFour"
+                              aria-expanded="false"
+                              aria-controls="collapseTwoofFour"
+                            >
+                              Can I book an online appointment for vaccination?
+                            </button>
+                          </h3>
+                          <div
+                            id="collapseTwoofFour"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingTwoofFour"
+                            data-bs-parent="#accordion"
+                          >
+                            <div class="accordion-body">
+                              Yes, you can book appointment for vaccination
+                              through Co-WIN portal (www.cowin.gov.in) or through
+                              the Aarogya Setu App, after signing-in through your
+                              registered mobile number. The persons who are
+                              partially vaccinated outside country, need to get
+                              vaccination in onsite mode only.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+              </div>
+              
+                </div>
+              </div>
+
+               
+            </div>
+
+
+        <div class="newCowin bg-content">
+          <h2 class="text-center mb-4 text-content">What's New On Co-WIN?</h2>
+          <div class="container">
+            <div class="row" style="height: 200px; overflow-y: scroll">
+              <div class="col-md-8">
+                <div class="row justify-content-around">
+                  <div
+                    class="col-md-4 mb-4 border text-warning bg-light"
+                    style="width: 300px; height: 100px; overflow-y: scroll"
+                  >
+                    <p>
+                      <b
+                        >New feature to report side effects after COVID-19
+                        vaccination.</b
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="col-md-4 mb-4 border text-content bg-light"
+                    style="width: 300px; height: 100px; overflow-y: scroll"
+                  >
+                    <p>
+                      Early administration of a precaution dose of COVID-19
+                      vaccine prior to the prescribed time interval to the
+                      persons intending to undertake international travel.
+                    </p>
+                  </div>
+                  <div
+                    class="col-md-4 mb-4 border text-content bg-light"
+                    style="width: 300px; height: 100px; overflow-y: scroll"
+                  >
+                    <p>Covovax vaccine for Children.</p>
+                  </div>
+                  <div
+                    class="col-md-4 mb-4 border text-content bg-light"
+                    style="width: 300px; height: 100px; overflow-y: scroll"
+                  >
+                    <p>
+                      HCW/FLW and Citizens in 60+ age group can now avail
+                      Precaution Dose
+                    </p>
+                  </div>
+                  <div
+                    class="col-md-4 mb-4 border text-content bg-light"
+                    style="width: 300px; height: 100px; overflow-y: scroll"
+                  >
+                    <p>
+                      New feature to Share Your Vaccination Status on different
+                      social media platforms
+                    </p>
+                  </div>
+                  <div
+                    class="col-md-4 mb-4 border text-content bg-light"
+                    style="width: 300px; height: 100px; overflow-y: scroll"
+                  >
+                    <p>
+                      Citizens can link their passports to Co-WIN issued
+                      certificate by raising an issue in their accounts
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <img
+                  src="images/what's_new_on_cowin.svg"
+                  alt="What's New On Co-WIN Image"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="India">
+          <h2 class="text-content text-center">
+            India Is Running The World’s Largest Vaccination Drive
+          </h2>
+          <div class="row" style="padding: 20px">
+            <div class="col-md-4">
+              <p class="text-content">Vaccines Delivered</p>
+              <p class="border rounded border-success mainIndia-border">
+                2,20,68,33,928 + 6,699
+              </p>
+              <p class="text-content">Citizens Fully Vaccinated</p>
+              <p class="border rounded border-success mainIndia-border">
+                95.2 Crore + 206
+              </p>
+              <p class="text-content">% of Fully Vaccinated</p>
+              <p class="border rounded border-success mainIndia-border">
+                92.66%
+              </p>
+            </div>
+            <div class="col-md-4">
+              <img
+                src="images/india_1.png"
+                style="width: 500px; padding: 20px"
+              />
+            </div>
+            <div class="col-md-4">
+              <button
+                class="btn btn-light btn-outline-success text-content btn-radius"
+                style="width: 300px"
+              >
+                View Vaccination Dashboard
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="partner-list bg-content">
+          <h2 class="text-content text-center" style="padding: 50px">
+            Our Partners
+          </h2>
+          <div class="row">
+            <div class="col-md-3">
+              <img src="images/partners_page.svg" style="width: 250px" />
+            </div>
+            <div class="col-md-8">
+              <div>
+                <div class="row" style="padding: 20px">
+                  <div class="col-md-3">
+                    <div class="partner border rounded bg-white">
+                      <img
+                        src="images/digilocker_new_Logo.svg"
+                        alt="Partner 1"
+                        class="img-partner"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="partner border rounded bg-white">
+                      <img
+                        src="images/umang_new_logo.svg"
+                        alt="Partner 2"
+                        class="img-partner"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="partner border rounded bg-white">
+                      <img
+                        src="images/arogya_setu_logo1.svg"
+                        alt="Partner 3"
+                        class="img-partner"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="partner border rounded bg-white">
+                      <img
+                        src="images/my_gov_new_logo.svg"
+                        alt="Partner 4"
+                        class="img-partner"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="partnerButton"
+                style="padding-left: 200px; padding-top: 20px"
+              >
+                <button
+                  class="btn btn-nav btn-outline-success text-content btn-radius text-white"
+                  style="width: 200px"
+                >
+                  View More
+                </button>
+                <button
+                  class="btn btn-light btn-outline-success text-content btn-radius"
+                  style="width: 200px"
+                >
+                  Register As Partner
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div>
+        <div class="row bg-nav text-white" style="padding: 20px;">
+          <div class="col-md-2">
+            <h5>VACCINATION SERVICES</h5>
+            <ul>
+              <li>Register Members</li>
+              <li>Search Vaccination Centers</li>
+              <li>Book Vaccination Slots</li>
+              <li>Manage Appointment</li>
+              <li>Download Certificate</li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h5>PLATFORMS</h5>
+            <ul>
+              <li>Co-WIN International</li>
+              <li>Vaccinator</li>
+              <li>Department Login</li>
+              <li>Verify Certificates</li>
+              <li>Vaccination Statistics</li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h5>RESOURCES</h5>
+            <ul>
+              <li>How To Get Vaccinated</li>
+              <li>Dos and Don'ts</li>
+              <li>Overview</li>
+              <li>API Guidelines</li>
+              <li>Open API's</li>
+              <li> Guidelines</li>
+            </ul>
+          </div>
+          <div class="one col-md-6">
+            <div class="row">
+              <div class="col-md-6">
+                <h5>SUPPORT</h5>
+                <ul>
+                  <li>Frequently Asked Questions</li>
+                  <li>Certificate Corrections</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <h5>CONTACT US</h5>
+                <p>Helpline: +91-11-23978046 (Toll Free - 1075)</p>
+                <p>Technical Helpline: 0120-4783222</p>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-md-6">
+                <h5>OTHER HELPLINES</h5>
+                <ul>
+                  <li>CHILD: 1098</li>
+                  <li>MENTAL HEALTH: 08046110007</li>
+                  <li>SENIOR CITIZENS: 14567</li>
+                  <li>NCW: 7827170170</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          </div>
+          </div>
+
+          <div class="copyright bg-head text-white">
+            <div class="row">
+              <div class="col-md-5">
+                <p>&copy; 2021 Co-WIN. All Rights Reserved</p>
+              </div>
+                <div class="col-md-4">
+                  <img src="images/national-health-authority.jpg" width="100px"/>
+                  <img src="images/undp-logo-vertical.svg" style="width: 25px;"/>
+                </div>
+              <div class="col-md-3">
+                <p>
+                  <a>Terms of Service</a> |
+                  <a>Privacy Policy</a>
+                </p>
+
+              </div>
+               
+              </div>
+            </div>
+          </div>
+
+          
+
+    </footer>
+    <script>
+      function openOption(evt, option) {
+  
+  var i, tabcontent, tablinks;
+
+  
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  
+  document.getElementById(option).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+function openOption2(evt, option) {
+  
+  var i, faqtabcontent, tablinks;
+
+  
+  tabcontent = document.getElementsByClassName("faqtabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  
+  document.getElementById(option).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
